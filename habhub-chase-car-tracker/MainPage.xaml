@@ -24,7 +24,7 @@
         <Grid x:Name="TitlePanel" Margin="0,0,0,22" Background="#FF00A3D3" Height="60" >
             <Image Height="50" Width="50" Name="imgLogo" Stretch="Uniform"  Source="/habhub-chase-car-tracker;component/images/logo.png" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="15,0,0,0" />
             <TextBlock x:Name="ApplicationTitle" Text="chase car tracker" Style="{StaticResource PhoneTextNormalStyle}" Foreground="White" Margin="0,5,0,0" Height="36" Width="170" TextWrapping="NoWrap" FontFamily="Segoe WP Semibold" HorizontalAlignment="Right" VerticalAlignment="Center" />
-            <Rectangle Height="2" HorizontalAlignment="Stretch" Margin="0,0,0,0" StrokeThickness="0" VerticalAlignment="Bottom" Width="Auto" Fill="#FF007BA0" />
+            <Rectangle Height="2" HorizontalAlignment="Stretch" Margin="0,0,0,0" StrokeThickness="0" VerticalAlignment="Bottom" Width="Auto" Fill="#FF00a9dc" />
         </Grid>
 
         <!--ContentPanel - place additional content here-->
@@ -61,7 +61,8 @@
     
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True" BackgroundColor="#FFEBEBEB" ForegroundColor="#FF222222">
             <shell:ApplicationBarIconButton IconUri="/images/play.png" Text="Start" Click="StartStopButton_Click" />
-            <shell:ApplicationBarIconButton IconUri="/images/settings.png" Text="Change Callsign" Click="ChangeCallsignButton_Click" />
+            <shell:ApplicationBarIconButton IconUri="/images/settings.png" Text="Callsign" Click="ChangeCallsignButton_Click" />
+            <shell:ApplicationBarIconButton IconUri="/images/time.png" Text="Interval" Click="ChangeIntervalButton_Click" />
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
 

@@ -12,6 +12,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
+using Windows.Devices.Geolocation;
 
 namespace habhub_chase_car_tracker
 {
@@ -22,6 +23,18 @@ namespace habhub_chase_car_tracker
         /// </summary>
         /// <returns>The root frame of the Phone Application.</returns>
         public PhoneApplicationFrame RootFrame { get; private set; }
+
+        /// <summary>
+        /// For running location stuff in the background
+        /// </summary>
+        public static Geolocator Geolocator { get; set; }
+        public static bool RunningInBackground { get; set; }
+
+        private void Application_RunningInBackground(object sender, RunningInBackgroundEventArgs args)
+        {
+            RunningInBackground = true;
+            // Suspend all unnecessary processing such as UI updates
+        }
 
         /// <summary>
         /// Constructor for the Application object.
@@ -69,6 +82,8 @@ namespace habhub_chase_car_tracker
         // This code will not execute when the application is first launched
         private void Application_Activated(object sender, ActivatedEventArgs e)
         {
+            RunningInBackground = false;
+
         }
 
         // Code to execute when the application is deactivated (sent to background)

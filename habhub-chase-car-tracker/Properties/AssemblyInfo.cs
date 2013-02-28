@@ -6,12 +6,12 @@ using System.Resources;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("habhub_chase_car_tracker")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("HabHub Chase Car Tracker")]
+[assembly: AssemblyDescription("Sends chase car location at regular intervals to habitat for display on the SpaceNearUs tracker.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("habhub_chase_car_tracker")]
-[assembly: AssemblyCopyright("Copyright ©  2012")]
+[assembly: AssemblyCompany("DSaul")]
+[assembly: AssemblyProduct("HabHub Chase Car Tracker")]
+[assembly: AssemblyCopyright("Copyright ©  2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -34,4 +34,4 @@ using System.Resources;
 // by using the '*' as shown below:
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
-[assembly: NeutralResourcesLanguageAttribute("en-US")]
+[assembly: NeutralResourcesLanguageAttribute("en-GB")]
